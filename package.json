@@ -1,6 +1,8 @@
 {
-  "name": "beetle",
+  "name": "beetle-frontend",
   "version": "0.1.0",
+  "description": "甲壳虫校园二手平台前端",
+  "author": "叶宏威",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
