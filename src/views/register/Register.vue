@@ -161,7 +161,9 @@
         }, 1000)
 
         // 发送验证码
-        this.sendEmail(this.userInfo.email).then(res => {
+        this.sendEmail({
+          email: this.userInfo.email
+        }).then(res => {
           if (res.data.status == 1010) {
             this.codeId = res.data.cid
             this.$message({
