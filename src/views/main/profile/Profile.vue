@@ -344,19 +344,6 @@
             })
           }
           let info = {}
-          if (item.id === 'sex') {
-            switch (value) {
-              case '男':
-                value = '1'
-                break
-              case '女':
-                value = '0'
-                break
-              case '保密':
-                value = '2'
-                break
-            }
-          }
           info[item.id] = value
           info['userId'] = this.userInfo.userId
           this.setUserInfo(info).then(res => {
