@@ -1,6 +1,6 @@
-# beetle 甲壳虫前端基础架构
+# beetle-frontend 甲壳虫前端基础架构
 
-#工作/beetle
+#工作/beetle-frontend
 
 **必读**
 
