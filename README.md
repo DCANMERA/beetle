@@ -26,9 +26,9 @@
 
 ### 后端接口
 
-1. 文件夹名字为 server
-2. 安装依赖 npm i
-3. 可联系 dcanmera@outlook.com 查看
+1. 文件夹名字为 beetle-backend
+2. 安装依赖 npm i 或 npm install
+3. 可联系 hongwei.ye@outlook.com 查看
 4. 进入后端代码目录，运行 node index. 接口： //localhost:10001
 
 ### 为什么选择 yarn 而不是 npm？
