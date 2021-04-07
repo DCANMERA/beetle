@@ -1,0 +1,25 @@
+.post-trade {
+  overflow: auto;
+  background-color: $white;
+  border-radius: 3px;
+
+  .title {
+    font-weight: normal;
+    font-size: 18px;
+    color: $brandColor;
+    text-align: left;
+    padding: 20px;
+    border-bottom: 1px solid $borderColor;
+  }
+
+  .goods-info {
+    margin: 20px 0 0;
+    max-width: 500px;
+
+    .block {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

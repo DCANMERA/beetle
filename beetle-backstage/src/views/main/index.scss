@@ -1,0 +1,62 @@
+.main {
+  height: 100%;
+
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 1024px;
+    background-color: $white;
+    border-bottom: 1px solid $borderColor;
+
+    .flex {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      img {
+        margin: 0 auto;
+      }
+
+      .nickname {
+        margin-left: 15px;
+      }
+    }
+
+    .project-name {
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+      color: $brandColor;
+      font-weight: normal;
+      font-size: 20px;
+    }
+
+    .logout {
+      cursor: pointer;
+      float: right;
+    }
+  }
+
+  .context {
+    overflow: hidden;
+    min-width: 1300px;
+
+    .el-aside {
+      overflow-y: scroll;
+      width: 240px !important;
+      border-top: 1px solid $borderColor;
+      user-select: none;
+
+      .menu-tree {
+        height: 100%;
+      }
+    }
+
+    .el-main {
+      overflow-y: scroll;
+      background-color: $workspaceBgColor;
+    }
+  }
+
+}

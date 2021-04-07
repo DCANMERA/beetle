@@ -1,0 +1,82 @@
+    .hot-product {
+      padding: 70px 0 100px;
+      background-color: $workspaceBgColor;
+      min-height: 500px;
+
+      .title {
+        position: relative;
+        margin-bottom: 75px;
+        text-align: center;
+
+        h2 {
+          font-size: 30px;
+          letter-spacing: 4px;
+          text-align: center;
+          margin-bottom: 10px;
+
+          &::before {
+            content: " ";
+            display: block;
+            margin: 0 auto;
+            position: absolute;
+            bottom: -24px;
+            left: 0;
+            right: 0;
+            width: 127px;
+            height: 2px;
+            background-color: $borderColor;
+          }
+
+          &::after {
+            content: " ";
+            display: block;
+            margin: 0 auto;
+            position: absolute;
+            bottom: -25px;
+            left: 0;
+            right: 0;
+            width: 40px;
+            height: 5px;
+            background-color: $brandColor;
+          }
+        }
+
+        p {
+          font-size: 18px;
+          line-height: 30px;
+          color: $subTextColor;
+          margin-bottom: 15px;
+        }
+      }
+
+      .product-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        overflow: auto;
+        max-width: 1260px;
+
+        .card {
+          margin: 0 15px 30px;
+        }
+      }
+
+      .emtype {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .emtype-icon {
+          font-size: 88px;
+          margin-bottom: 15px;
+        }
+
+        .emtype-title {
+          font-weight: 600;
+          font-size: 20px;
+        }
+      }
+    }

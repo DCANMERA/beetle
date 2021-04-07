@@ -1,0 +1,34 @@
+// 色值取自 https://element.eleme.cn/#/zh-CN/component/color
+// base color
+// 主色调
+$brandColor: #409EFF;
+// $brandColor: #545c64;
+// $activeTextColor: #ffd04b;
+
+// 辅助色
+$green: #67C23A;
+$yellow: #E6A23C;
+$red: #F56C6C;
+$gray: #909399;
+$white: #fff;
+$black: #000;
+
+// 中性色
+$primaryTextColor: #303133; // 主要文字
+$normalTextColor: #606266; // 常规文字
+$subTextColor: #909399; // 次要文字
+$placeholderTextColor: #C0C4CC; // 占位文字
+
+$borderColor: #DCDFE6;
+
+$workspaceBgColor: #e4e4e4;
+
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+:export {
+  green: $green;
+  yellow: $yellow;
+  red: $red;
+  gray: $gray;
+  borderColor: $borderColor;
+}
