@@ -41,7 +41,7 @@
                      shape="circle"
                      :size="46"
                      fit="cover"
-                     :src="userInfo.avatar">
+                     :src="userInfo && userInfo.avatar">
           </el-avatar>
           <router-link v-if="!isLogin"
                        to="login">

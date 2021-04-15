@@ -110,7 +110,8 @@
 
     methods: {
       ...mapActions({
-        login: 'user/login'
+        login: 'user/login',
+        getUserInfoForEmail: 'user/getUserInfoForEmail'
       }),
 
       /**
@@ -137,6 +138,9 @@
               for (let key in res.data) {
                 this.$cookies.set(key, res.data[key], '1d')
               }
+              this.getUserInfoForEmail({
+                email: this.userInfo.email
+              })
               let timer = setTimeout(() => {
                 this.$router.push({
                   name: 'Products'

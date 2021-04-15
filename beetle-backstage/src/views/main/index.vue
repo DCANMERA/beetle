@@ -2,22 +2,22 @@
   <el-container class="main">
     <el-header class="nav box-shadow">
       <el-popover placement="bottom"
-                  width="200"
+                  width="300"
                   trigger="click">
         <section>
-          <div>sex: {{userInfo.sex ? userInfo.sex : ''}}</div>
-          <div>email: {{userInfo.email ? userInfo.email : ''}}</div>
-          <div>phone: {{userInfo.phone ? userInfo.phone : '未填写'}}</div>
+          <div>sex: {{userInfo && userInfo.sex ? userInfo.sex : '保密'}}</div>
+          <div>email: {{userInfo && userInfo.email ? userInfo.email : '保密'}}</div>
+          <div>phone: {{userInfo && userInfo.phone ? userInfo.phone : '未填写'}}</div>
         </section>
         <section class="flex"
                  slot="reference">
           <el-avatar shape="circle"
                      :size="46"
                      fit="cover"
-                     :src="userInfo.avatar">
+                     :src="userInfo && userInfo.avatar">
           </el-avatar>
           <el-link class="nickname"
-                   :underline="false">{{userInfo.nickName}}</el-link>
+                   :underline="false">{{userInfo && userInfo.nickName}}</el-link>
         </section>
       </el-popover>
       <h1 class="project-name">甲壳虫管理系统</h1>
