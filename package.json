@@ -1,0 +1,19 @@
+{
+  "name": "beetle",
+  "version": "1.0.0",
+  "description": "Node.js + Vue.js + MySQL编写的校园二手交易平台",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dcanmera/beetle.git"
+  },
+  "author": "叶宏威",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dcanmera/beetle/issues"
+  },
+  "homepage": "https://github.com/dcanmera/beetle#readme"
+}
