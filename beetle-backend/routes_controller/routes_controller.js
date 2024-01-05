@@ -852,7 +852,7 @@ class RoutesController {
    */
   findLike(req, res) {
     // SQL预处理，防止SQL注入
-    let sql = productSQL + ' INNER JOIN `Like` AS `l` ON `l`.`pid` = `p`.`pid` AND `up`.`user_id` = :userId'
+    let sql = productSQL + ' INNER JOIN `Like` AS `l` ON `l`.`pid` = `p`.`pid` AND `l`.`user_id` = :userId'
     // 条件
     let params = {
       userId: req.userId,
@@ -964,7 +964,7 @@ class RoutesController {
    */
   shopcartProducts(req, res) {
     // SQL预处理，防止SQL注入
-    let sql = productSQL + " INNER JOIN `shopcart` AS `s` ON `s`.`pid` = `p`.`pid` AND `up`.`user_id` = :userId "
+    let sql = productSQL + " INNER JOIN `shopcart` AS `s` ON `s`.`pid` = `p`.`pid` AND `s`.`user_id` = :userId "
     sql = sql.replace('SELECT', 'SELECT `s`.`count`,')
     // 条件
     let params = {
